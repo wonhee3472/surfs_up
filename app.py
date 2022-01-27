@@ -11,7 +11,7 @@ from sqlalchemy import create_engine, func
 from flask import Flask, jsonify
 
 # Setting up the Database
-engine = create_engine("sqlite:///hawaii.sqlite") # <- this code allows you to ccess and query our SQLite database file.
+engine = create_engine("sqlite:///hawaii.sqlite") # <- this code allows you to access and query our SQLite database file.
 Base = automap_base() # <- this code reflects the database into our classes
 Base.prepare(engine, reflect=True) # <- this code relfects the tables into SQLAlchemy
 # saving our references to each table
